@@ -13,12 +13,12 @@ const BannerIMG = () => {
 
       {/* content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Clean Code
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#FF6B35] to-[#FFD580] bg-clip-text text-transparent drop-shadow-lg">
+          Discover Your Next Favorite Book
         </h1>
 
         <p className="text-lg md:text-xl text-gray-200 max-w-xl mb-6">
-          Write readable, maintainable code.
+          Explore thousands of books with BookCourier, delivered fast and easy.
         </p>
 
         <Link to="/all-books">
