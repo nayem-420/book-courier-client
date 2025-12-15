@@ -1,0 +1,34 @@
+import React from "react";
+import banner2 from "../../assets/banner-2.jpg";
+import { Link } from "react-router";
+
+const BannerIMG2 = () => {
+  return (
+    <div
+      className="h-[70vh] w-full bg-cover bg-center flex items-center"
+      style={{ backgroundImage: `url(${banner2})` }}
+    >
+      {/* overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          Clean Code
+        </h1>
+
+        <p className="text-lg md:text-xl text-gray-200 max-w-xl mb-6">
+          Write readable, maintainable code.
+        </p>
+
+        <Link to="/all-books">
+          <button className="bg-[#FF6B35] hover:bg-[#e85a28] text-white px-6 py-3 rounded-lg font-semibold transition">
+            Explore All Books
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default BannerIMG2;
